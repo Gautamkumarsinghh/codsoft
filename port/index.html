@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/lo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB Developer</p>
+                <h1>Hi, I'm <span>Gautam</span><br>Singh From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------about-------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/gautam.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> My name is Gautam Singh, and I hold a Bachelor of Engineering (B.E) degree in Computer Science Engineering. As a recent graduate and fresher in the field, I am eager to apply my academic knowledge to real-world challenges and grow professionally. My education has equipped me with a strong foundation in computer science principles, programming languages, and software development. I am enthusiastic about exploring new technologies and contributing to innovative projects in the tech industry.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>WEB DEVELOPER</span><br>Html <br> Css <br> Javascript <br> React </li>
+                        <li><span>DATABASE</span><br>My SQL</li>
+                        <li><span>BASiC KNOWLEDGE </span><br>Ms Word <br> Excel <br> PPT </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>FRESHER</span><br>Learn Experience</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor Degree</span><br>B.E(CSE) <br> Laxmi institute of technology,sarigam Gujarat</li>
+                        <li><span>Collage</span><br> 12TH <br> Maharani Kalayani College, Darbhanga Bihar<br></li>
+                        <li><span>School</span><br> Utkramit Madhyamik Vidyalay, Narma Bihar</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   </div>
+
+<!-----------------------services-------->
+
+<div id="Services">
+    <div class="container">
+       <h1 class="sub-title">My Services</h1> 
+       <div class="services-list">
+        <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Developer</h2>
+            <p></p>
+            <a href="#https://thebestschools.org/careers/career-guide/web-developer/"> </a>
+        </div>
+        <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>APP Developer</h2>
+            <p></p>
+            <a href="https://www.ibm.com/topics/mobile-application-development"> </a>
+        </div>
+        <div>
+            <i class="fab fa-app-store"></i>
+            <h2>UI Developer</h2>
+            <p></p>
+            <a href="https://www.simplilearn.com/what-is-a-ui-developer-and-what-skills-are-required-article#:~:text=A%20UI%20(User%20Interface)%20developer,web%20applications%2C%20and%20mobile%20applications."> </a>
+        </div>
+       </div>
+    </div>
+
+</div>
+<!----------------portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/1.jpeg">
+                <div class="layer">
+                    <h3>Bloging Article</h3>
+                    <p>  </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="image/2.jpeg">
+                <div class="layer">
+                    <h3>Online Shopping</h3>
+                    <p>  </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/3.jpeg">
+                <div class="layer">
+                    <h3>Blog Page</h3>
+                    <p>  </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+
+</div>
+<!--------------------contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>Gootam1710@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8651611893</p>
+            <div class="social-icons">
+                <a href="https://github.com/Gautamkumarsinghh "><i class="fa-brands fa-github"></i></a>
+                <a href=" https://wa.me/qr/KUUYXWHFDXRBE1 "><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/gautam-singh-537249250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/Gautam2229?t=8VcpuGX5XD3eu_-PbDHQgA&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+
+            </div>
+            <a href="image/pi.pdf" download class="btn btn2">Download CV</a>
+        </div>   
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright©Gautam Singh. Made With <i class="fa-solid fa-heart"></i> By Gautam</p>
+    </div>
+</div>
+
+<script>
+    
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "";
+}
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyDhr-X2Q6KlbTKVcvLVP46of0qAnjs4fsRKW7EyIWrznz_Ayk7NphTn3M_-0YPHUCp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message send successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

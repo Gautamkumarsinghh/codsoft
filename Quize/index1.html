@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="contact-right">
+    <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="number" name="Mobile number" placeholder="mobile number" required>
+        <input type="number" name="Total Question" placeholder="Total Question" required>
+        <input type="number" name="Correct Question" placeholder="Correct Question" required>
+        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+        <span id="msg"></span>
+    </form>
+    
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzALn0xb6BRuoE9zB_fj5WR5oGtmFyAZzCVCLgUfrxEp4vfc5yiwh0DhePt3Xit3JXV/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+              msg.innerHTML = "Submitted !"
+              setTimeout(function(){
+                  msg.innerHTML = ""
+              },2000)
+              form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</div>
+</body>
+</html>
